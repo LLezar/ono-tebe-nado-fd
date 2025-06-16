@@ -13,12 +13,12 @@
     <!-- Шапка -->
     <header class="header">
       <!-- Меню -->
-      <nav class="header__link">
+      <nav>
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
             <a
               href="#0"
-              class="header__link header__link_active header__links-list-item_no-bullit"
+              class="header__link header__link_active"
             >
               главная
             </a>
@@ -32,7 +32,7 @@
         </ul>
       </nav>
       <!-- Логотип -->
-      <a href="#0">
+      <a>
         <img
           src="images/logo-black.svg"
           alt="Логотип"
@@ -41,55 +41,49 @@
       </a>
       <!-- Адрес -->
       <address class="address header__address">
-        <ul class="address">
-          <li>
-            <a href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li>
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          </li>
-          <li>
-            наб. Принсенграхт 263-<br />
-            265, Амстердам
-          </li>
-        </ul>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>
+          наб. Принсенграхт 263-<br />
+          265, Амстердам
+        </p>
       </address>
     </header>
     <!-- Контент -->
     <main class="main">
       <!-- 1-я секция  ОНО ТЕБЕ НАДО -->
-      <section class="cover">
+      <section class="cover background">
         <div class="overlay"></div>
         <div class="cover__title">
           <h1>
-            <span class="aligned-text"> Оно </span>
-            <span class="aligned-text_center"> Тебе </span>
-            <span class="aligned-text_right"> Надо </span>
+            <span class="text__title aligned-text"> Оно </span>
+            <span class="text__title aligned-text_center"> Тебе </span>
+            <span class="text__title aligned-text_right"> Надо </span>
           </h1>
         </div>
         <div class="cover__description">
           <p class="cover__description-text">
-            аукцион вещей в которые никто не верил
+            Аукцион вещей, в которые никто не верил
           </p>
-          <p class="bet-button">СДЕЛАТЬ СТАВКУ</p>
+          <a href="#0" class="bet-button">СДЕЛАТЬ СТАВКУ </a>
         </div>
       </section>
       <!-- 2-я секция ЛОТЫ -->
       <section class="lots">
         <!-- Название -->
         <div>
-          <h1 class="lots__heading">ЛОТЫ</h1>
+          <h2 class="lots__heading">ЛОТЫ</h2>
         </div>
         <!-- Карточки -->
         <div>
           <ul class="lots__card-list">
             <li>
               <a href="#0" class="card-link">
-                <article class="card_type_film lots__card-list-item">
+                <article class="card_type_film lots__card-list-item background">
                   <div class="overlay"></div>
-                  <p class="card__title">
+                  <h3 class="card__title">
                     Фильм режиссёра, который бросил киношколу
-                  </p>
+                  </h3>
                   <p class="card__text">
                     Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                     ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -100,12 +94,12 @@
             </li>
             <li>
               <a href="#0" class="card-link">
-                <article class="card_type_book lots__card-list-item">
+                <article class="card_type_book background lots__card-list-item background">
                   <div class="overlay"></div>
-                  <p class="card__title">
+                  <h3 class="card__title">
                     Книга, где описан один скучный день из жизни рекламного
                     агента
-                  </p>
+                  </h3>
                   <p class="card__text">
                     Объёмом почти в тысячу страниц. Иногда без знаков препинания
                     и с переходами на древнеанглийский. В ней одновременно
@@ -119,11 +113,11 @@
             </li>
             <li>
               <a href="#0" class="card-link">
-                <article class="card_type_picture lots__card-list-item">
+                <article class="card_type_picture background lots__card-list-item background">
                   <div class="overlay"></div>
-                  <p class="card__title">
+                  <h3 class="card__title">
                     Картина, которую повторит даже 5-летний сын маминой подруги
-                  </p>
+                  </h3>
                   <p class="card__text">
                     Ну действительно, там линия, тут кружочек, а здесь и вовсе
                     что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -162,7 +156,7 @@
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
             странные вещи, созданные любителями?
           </p>
-          <p class="about__text about__text__bottom">
+          <p class="about__text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
             Когда-то они казались просто неудачными. Но, несмотря на критику,
@@ -184,7 +178,7 @@
           <li>
             <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           </li>
-          <li>наб. Принсенграхт 263- 265, Амстердам</li>
+          <li>наб. Принсенграхт 263-265, Амстердам</li>
         </ul>
       </address>
       <!-- Меню -->
@@ -206,7 +200,7 @@
       <!-- Иконки -->
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" target="_blank" class="footer__social-link">
             <img
               src="images/yt.svg"
               alt="Иконка YouTube"
@@ -215,7 +209,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" target="_blank" class="footer__social-link">
             <img
               src="images/vk.svg"
               alt="Иконка ВК"
@@ -224,7 +218,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" target="_blank" class="footer__social-link">
             <img
               src="images/pinterest.svg"
               alt="Иконка Pinterest"
